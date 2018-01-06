@@ -1,0 +1,11 @@
+/**
+ *  Adam Ely
+ *  Project 3
+ *  03/19/2015
+ */
+ ProcessClient - This class will declare variables the will hold the totals for
+ user information input.  This class will also prompt the user about their lawn size,
+ and also output the information that the user entered
+ 
+ Client - This class will declare variables and have get/set methods for the variables.
+ 

@@ -1,0 +1,193 @@
+/**
+ *  Adam Ely
+ *  Project 3
+ *  03/20/2015
+ */
+ ProcessClient:
+	START class
+		DECLARE variable for name
+		DECLARE variable for lengthOfLawn
+		DECLARE variable for widthOfLawn
+		DECLARE variable for numberOfPayments
+	
+		START METHOD to set name
+			SET name equal to something
+		END METHOD
+		
+		START METHOD to get name
+			RETURN name
+		END METHOD
+		
+		START METHOD to set lengthOfLawn
+			SET lengthOfLawn equal to something
+		END METHOD
+		
+		START METHOD to get lengthOfLawn
+			RETURN lengthOfLawn
+		END METHOD
+		
+		START METHOD to set widthOfLawn
+			SET widthOfLawn equal to something
+		END METHOD
+		
+		START METHOD to get widthOfLawn
+			RETURN widthOfLawn
+		END METHOD
+		
+		START METHOD to set numberOfPayments
+			SET numberOfPayments equal to something
+		END METHOD
+		
+		START METHOD to get numberOfPayments
+			RETURN numberOfPayments
+		END METHOD
+		
+	END class
+	
+ Client:
+	START class
+	
+		START METHOD 
+			
+			START WHILE LOOP
+			
+				DECLARE variable that will hold the total number of clients
+				
+				SET name variable equal to InputHelper and ask for user name
+				
+				OUTPUT "Client: " + name
+			
+				SET the lawnSize variable equal to 0
+			
+				SET lawnSize variable equal to the InputHelper and ask user for their lawnSize
+				
+				START IF lawnSize is less than 0 
+					BREAK
+					OUTPUT "Please enter a postitive number"
+				END IF
+				  
+				  START ELSE 
+					OUTPUT "Lawn Size: " + lawnSize
+				  END ELSE
+				  
+				SET widthOfLawn variable equal to 0
+				
+				SET the widthOfLawn equal to the InputHelper and ask for the clients widthOfLawn
+				
+				SET lengthOfLawn variable equal to 0
+				
+				SET the lengthOfLawn equal to the InputHelper and ask for the clients lengthOfLawn
+				
+				DECLARE a variable that will hold the lawn size
+				
+				SET the lawn size variable equal to widthOfLawn times lengthOfLawn
+				
+				OUTPUT "Lawn Size: " + lawnSize
+				
+				SET the numberOfPayments equal to 0
+				
+				SET the numberOfPayments equal to the InputHelper and ask user for the number of payments they would like
+				
+				START IF numberOfPayments does not equal 1, 2, or 20
+					
+					BREAK 
+					OUTPUT "Enter either 1, 2, or 20 payments"
+				
+				END IF
+				
+				ELSE
+					
+					OUTPUT "Number of Payments: " + numberOfPayments
+					
+				END ELSE
+				
+				DECLARE variable for a small lawn charge and set it equal to 25
+				
+				DECLARE variable for a medium lawn charge and set it equal to 35
+				
+				DECLARE variable for a large lawn charge and set it equal to 50
+				
+				DECLARE variable for a small lawn size and set it equal to 400
+				
+				DECLARE variable for a large large size and set it equal to 600
+				
+				DECLARE variable for the amount of each payment and set equal to 0
+				
+				DECLARE variable for the total of all payments and set equal to 0
+				
+				DECLARE variable for the number of mowings and set it equal to 20
+				
+				DECLARE variable for two payments service charge and set it equal to 5	
+				   
+				DECLARE variable for 20 payments service charge and set it equal to 3
+				
+				DECLARE variable for two payment and set it equal to 2 
+				
+				DECLARE variable for 20 payments and set it equal to 20 
+				
+				DECLARE variable for total service charge and set it equal to 0 
+					
+				START IF numberOfPayments is equal to two payments
+				
+					total service charge = two payments * two payments service charge
+					
+				END IF
+				
+				START ELSE IF numberOfPayments is equal to 20 payments 
+				
+					total service charge = 20 payments * 20 payments service charge
+					
+				END ELSE IF 
+				
+				START ELSE
+				
+					total service charge = 0 
+					
+				END ELSE
+				
+				START IF lawnSize is less than small lawn size
+				
+					total of all payments = small lawn charge * number of mowings + total service charge 
+				
+				END IF
+				
+				ELSE IF lawnSize is greater than or equal to small lawn size and less than large lawn size
+				
+					total of all payments = medium lawn charge * number of mowings + total service charge 
+					
+				END ELSE IF
+				
+				START ELSE
+				
+					total of all payments = large lawn charge * number of mowings + total service charge
+					
+				END ELSE
+				
+				amount of each payment = total of all payments / numberOfPayments
+				
+				OUTPUT "Amount of each payment: " + amount of each payment
+				
+				OUTPUT "Total of all payments: " + total of all payments
+				
+				DECLARE variable for total number of clients and set it equal to 0 
+				
+				DECLARE variable for total square footage of mowing and set it equal to 0
+				
+				DECLARE variable for total revenue for the summer and set it equal to 0 
+				
+				total square footage of mowing += lawnSize
+				
+				total revenue for summer += total of all payments
+				
+				OUTPUT "Total Number Of Clients: " + total number of clients
+				
+				OUTPUT "Total Square Feet of Mowing: " + total square footage of mowing
+				
+				OUTPUT "Total Revenue for the summer: " + total revenue for summer
+				
+				total number of clients ++
+				
+		END METHOD
+		
+	END CLASS
+		

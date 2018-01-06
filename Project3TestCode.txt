@@ -1,0 +1,22 @@
+/**
+ *  Adam Ely
+ *  Project 3
+ *  03/20/2015
+ */
+ START CLASS
+ 
+	START MAIN METHOD
+	
+		CREATE new objects for the Client class
+		
+		SET the new objects equal to the set methods from the client class
+		
+		OUTPUT the first Client
+		
+		START IF/ELSE statements testing that the get/set methods are true
+		
+		END IF/ELSE 
+		
+	END MAIN METHOD
+	
+ END CLASS

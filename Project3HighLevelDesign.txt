@@ -1,0 +1,17 @@
+/**
+ *  Adam Ely
+ *  Project 3
+ *  03/15/2015
+ */
+High-Level Design:
+
+  1. Start Application
+  2. Ask user for name
+  3. Ask user for length of lawn
+  4. Ask user for width of lawn
+  5. Ask user for the number of payments they wish to choose
+  6. Ask user if they want to enter a new client
+  7. Do calculations based upon the information that the user gave you
+  8. Output the information that the user gave you with the calculations totaled up
+  9. Output the grand totals of the information given by the user
+  10. End Application
